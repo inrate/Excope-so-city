@@ -1,7 +1,4 @@
-xtends Sprite
-
-
-# Declare member variables here. Examples:
+e member variables here. Examples:
 # var a = 2
 # var b = "text"
 
