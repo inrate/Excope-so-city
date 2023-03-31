@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const MAX_SPEED=250
+const MAX_SPEED=200
 var FM = Sprite
 
 
@@ -22,3 +22,7 @@ func _physics_process(delta):
 		velocity=velocity.move_toward(Vector2.ZERO,MAX_SPEED)
 	
 	velocity=(move_and_slide(velocity)*delta)
+
+
+func _on_Area2D_body_entered(body):
+	pass # Replace with function body.
