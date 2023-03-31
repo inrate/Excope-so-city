@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://addons/speechtotext/Example.gd" type="Script" id=1]
 [ext_resource path="res://addons/speechtotext/SpeechToText.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Sprites/grass_tileset_16x16_preview2_0.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/0b1aa1d1f0a9cc9b97c24589902a6bd0.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/cf3cbe69632e405c8c1a132301e4f2fd.png" type="Texture" id=6]
+[ext_resource path="res://MEOW.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Spike.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -679,3 +681,40 @@ tile_set = SubResource( 55 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 983054, 1, 0, 983062, -1610612735, 0, 1310738, 0, 0, 1310742, 1610612737, 0, 1376258, -1073741823, 0, 1376259, -1610612736, 0, 1376263, 0, 0, 1376264, 1610612737, 0, 1900551, -1073741824, 0, 1900558, 1610612736, 0, 2162691, -1073741823, 0, 2162706, 1610612737, 0 )
+
+[node name="MEOW" parent="." instance=ExtResource( 7 )]
+position = Vector2( 12, 65 )
+
+[node name="Spike" parent="." instance=ExtResource( 8 )]
+position = Vector2( 470, 324 )
+z_index = -81
+
+[node name="Spike2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 582, 255 )
+rotation = -3.10926
+z_index = -81
+
+[node name="Spike3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 611, 140 )
+rotation = -3.10926
+z_index = -81
+
+[node name="Spike4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 610, 49 )
+rotation = -3.10926
+z_index = -81
+
+[node name="Spike5" parent="." instance=ExtResource( 8 )]
+position = Vector2( 498, 123 )
+rotation = -1.59021
+z_index = -81
+
+[node name="Spike6" parent="." instance=ExtResource( 8 )]
+position = Vector2( 677, 100 )
+rotation = -0.0361468
+z_index = -81
+
+[node name="Spike7" parent="." instance=ExtResource( 8 )]
+position = Vector2( 412, 122 )
+rotation = 1.63291
+z_index = -81
