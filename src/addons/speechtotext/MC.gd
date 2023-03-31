@@ -1,24 +1,28 @@
 extends KinematicBody2D
 
-var speed = 400
+const MAX_SPEED=250
+var FM = Sprite
 
-func get_input(command):
-	var input_direction = Input.get_vector("left", "right", "up", "down")
-	velocity = input_direction * speed
-	if command == "forward":
-		velocity.y = -speed
-	elif command == "back":
-		velocity.y = speed
-	elif command == "left":
-		velocity.x = -speed
-	elif command == "right":
-		velocity.x = speed
+
+#z = shoot
+#x = bombe
+#shift = slowdown / focusmode
 
 	
+	
+var velocity = Vector2.ZERO
 
 
-	   
 func _physics_process(delta):
-	get_input()
-	move_and_slide()
-
+	var input_vector=Vector2.ZERO
+	input_vector.x=Input.get_action_strength("ui_right")-Input.get_action_strength("ui_left")
+	input_vector.y=Input.get_action_strength("ui_down")-Input.get_action_strength("ui_up")
+	input_vector = input_vector.normalized()
+	
+	
+	if input_vector!=Vector2.ZERO:
+		velocity=velocity.move_toward(input_vector*MAX_SPEED,MAX_SPEED)
+	else:
+		velocity=velocity.move_toward(Vector2.ZERO,MAX_SPEED)
+	
+	velocity=(move_and_slide(velocity)*delta)
