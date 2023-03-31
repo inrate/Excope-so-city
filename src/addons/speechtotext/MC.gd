@@ -4,10 +4,6 @@ const MAX_SPEED=250
 var FM = Sprite
 
 
-#z = shoot
-#x = bombe
-#shift = slowdown / focusmode
-
 	
 	
 var velocity = Vector2.ZERO
