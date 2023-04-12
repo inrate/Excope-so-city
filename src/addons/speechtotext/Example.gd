@@ -20,3 +20,9 @@ func _process(_delta):
 			if result is GDScriptFunctionState:
 				result = yield(result, "completed")
 			print("Recognized: " + result)
+			
+			if result.find("right") >= 0:
+				Input.action_press("ui_right")
+				yield(get_tree().create_timer(0.5), "timeout")
+				Input.action_release("ui_right")
+				
