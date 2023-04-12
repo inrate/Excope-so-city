@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/LAVA not tile.png" type="Texture" id=1]
+[ext_resource path="res://LAVA.gd" type="Script" id=2]
+
+[node name="LAVA" type="Area2D"]
+scale = Vector2( 2.16592, 45.1921 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 760.416, 61.493 )
+scale = Vector2( 0.3665, 0.046 )
+texture = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_LAVA_body_entered"]
