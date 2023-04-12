@@ -25,4 +25,4 @@ func _process(_delta):
 				Input.action_press("ui_right")
 				yield(get_tree().create_timer(0.5), "timeout")
 				Input.action_release("ui_right")
-				
+				print("Neko: yes master")
