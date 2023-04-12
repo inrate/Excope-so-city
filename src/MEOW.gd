@@ -4,8 +4,6 @@ class_name Player
 const MAX_SPEED=200
 var FM = Sprite
 
-
-	
 	
 var velocity = Vector2.ZERO
 
@@ -23,5 +21,8 @@ func _physics_process(delta):
 		velocity=velocity.move_toward(Vector2.ZERO,MAX_SPEED)
 	
 	velocity=(move_and_slide(velocity)*delta)
-
+	for i in get_slide_count():
+		var collision = get_slide_collision(i)
+		if collision:
+			emit_signal('collided', collision) 
 
