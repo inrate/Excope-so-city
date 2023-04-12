@@ -23,6 +23,28 @@ func _process(_delta):
 			
 			if result.find("right") >= 0:
 				Input.action_press("ui_right")
-				yield(get_tree().create_timer(0.5), "timeout")
+				yield(get_tree().create_timer(0.2), "timeout")
 				Input.action_release("ui_right")
 				print("Neko: yes master")
+				
+			if result.find("right one") >= 0:
+				Input.action_press("ui_right")
+				yield(get_tree().create_timer(0.5), "timeout")
+				Input.action_release("ui_right")
+			
+				
+				
+			if result.find("left") >= 0:
+				Input.action_press("ui_left")
+				yield(get_tree().create_timer(0.2), "timeout")
+				Input.action_release("ui_left")
+				
+			if result.find("up") >= 0:
+				Input.action_press("ui_up")
+				yield(get_tree().create_timer(0.2), "timeout")
+				Input.action_release("ui_up")
+				
+			if result.find("down") >= 0:
+				Input.action_press("ui_down")
+				yield(get_tree().create_timer(0.2), "timeout")
+				Input.action_release("ui_down")
