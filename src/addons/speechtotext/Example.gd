@@ -34,17 +34,32 @@ func _process(_delta):
 			
 				
 				
-			if result.find("left") >= 0:
+			if result.find("back") >= 0:
 				Input.action_press("ui_left")
 				yield(get_tree().create_timer(0.2), "timeout")
 				Input.action_release("ui_left")
 				
-			if result.find("up") >= 0:
+			if result.find("back one") >= 0:
+				Input.action_press("ui_left")
+				yield(get_tree().create_timer(0.5), "timeout")
+				Input.action_release("ui_left")
+				
+			if result.find("north") >= 0:
 				Input.action_press("ui_up")
 				yield(get_tree().create_timer(0.2), "timeout")
 				Input.action_release("ui_up")
 				
+			if result.find("north one") >= 0:
+				Input.action_press("ui_up")
+				yield(get_tree().create_timer(0.5), "timeout")
+				Input.action_release("ui_up")
+				
 			if result.find("down") >= 0:
+				Input.action_press("ui_down")
+				yield(get_tree().create_timer(0.2), "timeout")
+				Input.action_release("ui_down")
+				
+			if result.find("down one") >= 0:
 				Input.action_press("ui_down")
 				yield(get_tree().create_timer(0.2), "timeout")
 				Input.action_release("ui_down")
