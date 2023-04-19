@@ -603,5 +603,9 @@ polygon = PoolVector2Array( -10.7862, 9.02475, -8.62894, -16.1914, 403.401, -16.
 position = Vector2( 955.651, 49.1052 )
 polygon = PoolVector2Array( -10.7861, -2.65434, -10.7861, -10.0865, 159.635, -10.0865, 159.635, -5.30868, 127.276, -5.30868, 127.276, 58.3954, -563.036, 58.3954, -563.036, -5.83955, -494.005, -5.57411, -494.005, 45.3892, -10.7861, 45.1237, -10.7861, -10.0865 )
 
+[node name="Death ball2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 484, 476 )
+speed = 80
+
 [node name="Death ball" parent="." instance=ExtResource( 9 )]
 position = Vector2( 929, 216 )
