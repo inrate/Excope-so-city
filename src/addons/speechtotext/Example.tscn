@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://addons/speechtotext/Example.gd" type="Script" id=1]
 [ext_resource path="res://addons/speechtotext/SpeechToText.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://LAVA.tscn" type="PackedScene" id=6]
 [ext_resource path="res://MEOW.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Spike.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Death ball.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -601,3 +602,6 @@ polygon = PoolVector2Array( -10.7862, 9.02475, -8.62894, -16.1914, 403.401, -16.
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="LAVA"]
 position = Vector2( 955.651, 49.1052 )
 polygon = PoolVector2Array( -10.7861, -2.65434, -10.7861, -10.0865, 159.635, -10.0865, 159.635, -5.30868, 127.276, -5.30868, 127.276, 58.3954, -563.036, 58.3954, -563.036, -5.83955, -494.005, -5.57411, -494.005, 45.3892, -10.7861, 45.1237, -10.7861, -10.0865 )
+
+[node name="Death ball" parent="." instance=ExtResource( 9 )]
+position = Vector2( 891, 214 )
