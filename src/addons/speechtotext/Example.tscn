@@ -608,4 +608,4 @@ position = Vector2( 484, 476 )
 speed = 80
 
 [node name="Death ball" parent="." instance=ExtResource( 9 )]
-position = Vector2( 929, 216 )
+position = Vector2( 877, 195 )
