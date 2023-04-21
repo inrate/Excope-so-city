@@ -590,6 +590,14 @@ position = Vector2( 412, 122 )
 rotation = 1.63291
 z_index = -81
 
+[node name="Spike8" parent="." instance=ExtResource( 8 )]
+position = Vector2( 768, 229 )
+rotation = 1.60036
+
+[node name="Spike9" parent="." instance=ExtResource( 8 )]
+position = Vector2( 976, 225 )
+rotation = 4.68342
+
 [node name="LAVA" parent="." instance=ExtResource( 6 )]
 position = Vector2( -150, 173 )
 scale = Vector2( 0.463558, 3.76742 )
