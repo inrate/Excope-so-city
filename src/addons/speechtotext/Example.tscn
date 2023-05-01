@@ -621,3 +621,44 @@ speed = 200
 
 [node name="Death ball" parent="." instance=ExtResource( 9 )]
 position = Vector2( 877, 195 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_left = 1034.0
+margin_top = 58.0
+margin_right = 1216.0
+margin_bottom = 98.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer"]
+margin_top = 8.0
+margin_right = 182.0
+margin_bottom = 32.0
+text = "-> = Go right    <-=Go back"
+expand_to_text_length = true
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+margin_left = 1034.0
+margin_top = 93.0
+margin_right = 1244.0
+margin_bottom = 133.0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer2"]
+margin_top = 8.0
+margin_right = 210.0
+margin_bottom = 32.0
+text = "Up = Go north down= Go down"
+expand_to_text_length = true
+
+[node name="CenterContainer3" type="CenterContainer" parent="."]
+margin_left = 1034.0
+margin_top = 125.0
+margin_right = 1417.0
+margin_bottom = 165.0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer3"]
+margin_top = 8.0
+margin_right = 383.0
+margin_bottom = 32.0
+text = "add \"one\" to your sentence to go further. fx \"go right one\""
+expand_to_text_length = true
