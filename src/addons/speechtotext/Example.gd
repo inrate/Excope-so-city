@@ -44,12 +44,12 @@ func _process(_delta):
 				yield(get_tree().create_timer(0.5), "timeout")
 				Input.action_release("ui_left")
 				
-			if result.find("north") >= 0:
+			if result.find("up") >= 0:
 				Input.action_press("ui_up")
 				yield(get_tree().create_timer(0.2), "timeout")
 				Input.action_release("ui_up")
 				
-			if result.find("north one") >= 0:
+			if result.find("up one") >= 0:
 				Input.action_press("ui_up")
 				yield(get_tree().create_timer(0.5), "timeout")
 				Input.action_release("ui_up")
