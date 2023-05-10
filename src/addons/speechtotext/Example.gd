@@ -61,5 +61,5 @@ func _process(_delta):
 				
 			if result.find("down one") >= 0:
 				Input.action_press("ui_down")
-				yield(get_tree().create_timer(0.2), "timeout")
+				yield(get_tree().create_timer(0.5), "timeout")
 				Input.action_release("ui_down")
