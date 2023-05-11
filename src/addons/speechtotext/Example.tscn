@@ -656,10 +656,24 @@ margin_left = 1034.0
 margin_top = 125.0
 margin_right = 1417.0
 margin_bottom = 165.0
+rect_pivot_offset = Vector2( 43, -93 )
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer3"]
 margin_top = 8.0
 margin_right = 383.0
 margin_bottom = 32.0
 text = "add \"one\" to your sentence to go further. fx \"go right one\""
+expand_to_text_length = true
+
+[node name="CenterContainer4" type="CenterContainer" parent="."]
+margin_left = 1031.0
+margin_top = 18.0
+margin_right = 1071.0
+margin_bottom = 58.0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer4"]
+margin_top = 8.0
+margin_right = 322.0
+margin_bottom = 32.0
+text = "hold mellemrum ned for at snakke. giv slip efter"
 expand_to_text_length = true
